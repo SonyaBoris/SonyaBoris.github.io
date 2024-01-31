@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #191919;
+  color: #fff;
+  padding: 50px 0;
+}
+a{
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  width: calc(100vw - 100px);
+  height: 100%;
+  background-color: #191919;
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 1400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  padding: 40px 0; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 90%;
+  margin: 0 auto; 
+}
+.welcome{
+  position: relative;
+  height: 80vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.exit__btn{
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.categories{
+  padding-bottom: 20px;
+}
+.categories  ul{
+  display: flex;
+  gap: 30px;
+}
+li{
+  padding: 10px 20px;
+  border: 1px solid #9ac337;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.active{
+  background-color: #9ac337;
+}
+.content__title{
+  font-size: 32px;
+}
+.content__items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.character{
+  width: 48%;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #9ac337;
+  border-radius: 30px;
+}
+.character__image {
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+}
+.character__info-name{
+  font-size: 32px;
+}
+.character__info{
+  font-size: 20px;
+  font-weight: 400;
+}
+.pagination{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+  margin-top: 40px;
 }
-
-.App-link {
-  color: #61dafb;
+.pagination__btn,
+.welcome-btn{
+  padding: 10px 20px;
+  background-color: inherit;
+  color: #fff;
+  border: 1px solid #9ac337;
+  border-radius: 30px;
+  font-size: 20px;
+  transition: all .2s ease-in;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination__btn:hover,
+.welcome-btn:hover{
+  background-color: #9ac337;
+}
+.pagination__pages{
+  font-size: 32px;
 }
