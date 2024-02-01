@@ -44,7 +44,7 @@ const Table = () => {
 
   return (
     <div className="container">
-      <Link to='/welcome'>
+      <Link to='/'>
         <button className="exit__btn">
           <svg width="25" height="25" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M338 419L175 256L338 93" stroke="white" stroke-width="24" stroke-linecap="round" />
