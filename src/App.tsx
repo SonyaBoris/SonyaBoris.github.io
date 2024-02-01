@@ -8,7 +8,7 @@ function App() {
     <div className="wrapper">
       <div className="content">
         <Routes>
-          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/" element={<Welcome />} />
           <Route path="/table" element={<Table />} />
         </Routes>
       </div>
